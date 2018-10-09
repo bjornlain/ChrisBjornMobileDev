@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:paddingTop="20dp"
+        android:background="#2aa5a5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inside_linear">
+
+        </LinearLayout>
+        <!--   <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingTop="4dp"
+             android:id="@+id/linearLayout"
+             android:layout_gravity="fill_horizontal">
+
+           <TextView
+                 android:textColor="#0d0d0d"
+                 android:background="#2aa5a5"
+                 android:id="@+id/restaurant_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="17sp" />
+
+             <Button
+                 android:id="@+id/menu_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:paddingRight="1dp"
+                 android:paddingLeft="1dp"
+                 android:textSize="17sp"
+
+                  />
+             <Button
+                 android:id="@+id/info_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingRight="1dp"
+                 android:paddingLeft="1dp"
+                 android:layout_weight="1"
+                 android:textSize="17sp"
+
+                  />
+             <Button
+                 android:id="@+id/locatie_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:paddingRight="1dp"
+                 android:paddingLeft="1dp"
+                 android:layout_weight="1"
+                 android:textSize="17sp"
+
+                 />
+             <Button
+                 android:id="@+id/website_button"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="17sp"
+                 android:paddingRight="1dp"
+                 android:paddingLeft="1dp"
+                 android:layout_weight="1"
+
+                  />
+
+         </LinearLayout>
+  -->
+     </ScrollView>
+
+ </FrameLayout>
