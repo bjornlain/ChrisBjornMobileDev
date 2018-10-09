@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             restName.setTextSize(18);
             Button menuButton = new Button(this);
             LinearLayout.LayoutParams buttonLayoutParams = new LinearLayout.LayoutParams(167,100);
-            buttonLayoutParams.setMargins(20,0,0,0);
+            buttonLayoutParams.setMargins(30,0,0,0);
             menuButton.setLayoutParams(buttonLayoutParams);
             menuButton.setId(i);
             menuButton.setText("menu");
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             menuButton.setBackgroundResource(R.drawable.roundedbutton);
             Button infoButton = new Button(this);
             LinearLayout.LayoutParams infoLayoutParams = new LinearLayout.LayoutParams(167,100);
-            infoLayoutParams.setMargins(20,0,0,0);
+            infoLayoutParams.setMargins(30,0,0,0);
             infoButton.setLayoutParams(infoLayoutParams);
             infoButton.setId(i);
             infoButton.setText("info");
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             infoButton.setBackgroundResource(R.drawable.roundedbutton);
             Button locatieButton = new Button(this);
             LinearLayout.LayoutParams locatieLayoutParams = new LinearLayout.LayoutParams(167,100);
-            locatieLayoutParams.setMargins(20,0,0,0);
+            locatieLayoutParams.setMargins(30,0,0,0);
             locatieButton.setLayoutParams(locatieLayoutParams);
             locatieButton.setId(i);
             locatieButton.setText("locatie");
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             locatieButton.setBackgroundResource(R.drawable.roundedbutton);
             Button websiteButton = new Button(this);
             LinearLayout.LayoutParams websiteLayoutParams = new LinearLayout.LayoutParams(167,100);
-            locatieLayoutParams.setMargins(20,0,0,0);
+            websiteLayoutParams.setMargins(30,0,0,0);
             websiteButton.setLayoutParams(websiteLayoutParams);
             websiteButton.setId(i);
             websiteButton.setText("website");
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             menuButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, ("MenuButton" + v.getId()+1 )+ " is clicked",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "MenuButton" + (v.getId()+1 )+ " is clicked",Toast.LENGTH_SHORT).show();
                 }
             });
             linear.addView(restName);
