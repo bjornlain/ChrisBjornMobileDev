@@ -1,5 +1,6 @@
 package com.example.teambc.projectmobiledevelop;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity  {
 
     /* TextView mRestaurantTextView;
      Button mMenuButton;
@@ -21,14 +22,17 @@ public class MainActivity extends AppCompatActivity {
      Button mWebsiteButton;*/
     ScrollView mScrollView;
     LinearLayout mInsideLinear;
+    Button terugButton;
+    Button sorteerButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
 
+        terugButton = (Button) findViewById(R.id.terug_button);
         mInsideLinear = (LinearLayout) findViewById(R.id.inside_linear);
         mScrollView = (ScrollView) findViewById(R.id.scrollView);
-
+        sorteerButton = (Button) findViewById(R.id.sorteer_button);
 
         String[] dummyNames = {"Restaurant 1", "Restaurant 2" , "Restaurant 3" , "Restaurant 4", "Restaurant 5","Restaurant 6","Restaurant 7", "Restaurant 8", "Restaurant 9","Restaurant 10"};
 
@@ -107,9 +111,14 @@ public class MainActivity extends AppCompatActivity {
            mInsideLinear.addView(linear);
 
         }
-
-
-
-
+        configureerButtons();
+    }
+    private void configureerButtons(){
+        sorteerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SorteerActivity.class));
+            }
+        });
     }
 }

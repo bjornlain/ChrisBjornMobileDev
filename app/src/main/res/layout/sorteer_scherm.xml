@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_x="201dp"
+        android:layout_y="192dp"
+        android:text="Afstand"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_x="52dp"
+        android:layout_y="193dp"
+        android:text="Rating"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_x="201dp"
+        android:layout_y="108dp"
+        android:text="Open"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_x="49dp"
+        android:layout_y="106dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="136dp"
+        android:layout_y="47dp"
+        android:text="Sorteer op:"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <Button
+        android:id="@+id/terug_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="320dp"
+        android:text="Ga terug"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+</AbsoluteLayout>
