@@ -11,12 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        >
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/inside_linear">
+            android:id="@+id/inside_linear"
+            android:weightSum="120">
 
         </LinearLayout>
      </ScrollView>
@@ -24,17 +26,20 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
-        android:background="#0000FF">
+        android:background="#0000FF"
+        android:gravity="center">
         <Button
             android:layout_width="wrap_content"
-            android:layout_marginLeft="100dp"
             android:layout_height="wrap_content"
+            android:background="#D3D3D3"
             android:text="Sorteer op"
             android:id="@+id/sorteer_button"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:id="@+id/maps_button"
+            android:background="#D3D3D3"
+            android:layout_marginLeft="45dp"
             android:text="Google Maps"
             />
     </LinearLayout>
